@@ -8,6 +8,7 @@ import Buy from "./BuySell/Buy";
 import Calendar from "./EventScheduler/Calendar";
 // import Header from "./Header";
 // import Footer from "./Footer";
+import Notes from "./Notes/Notes";
 
 
 
@@ -88,6 +89,7 @@ const App = () => {
             <Route path="/products" element={<ProductList />} /> 
             <Route path="/buy" element={<Buy />} />
             <Route path="/calendar" element={<Calendar />} /> 
+            <Route path="/notes" element={<Notes />} /> 
            
 
 
