@@ -6,6 +6,7 @@ import Sell from "./BuySell/Sell";
 import ProductList from "./BuySell/ProductList";
 import Buy from "./BuySell/Buy";
 import Calendar from "./EventScheduler/Calendar";
+
 // import Header from "./Header";
 // import Footer from "./Footer";
 import Notes from "./Notes/Notes";
@@ -24,8 +25,9 @@ import Notes from "./Notes/Notes";
 
 
 
-//drive imports iske neeche
-
+//Dhruv imports iske neeche
+import Login from "./Authentication/Login";
+import Signup from "./Authentication/Signup";
 
 
 
@@ -90,8 +92,8 @@ const App = () => {
             <Route path="/buy" element={<Buy />} />
             <Route path="/calendar" element={<Calendar />} /> 
             <Route path="/notes" element={<Notes />} /> 
-           
-
+            <Route path="/login" element={<Login />} />
+            <Route path="/signup" element={<Signup />} />
 
 
 
