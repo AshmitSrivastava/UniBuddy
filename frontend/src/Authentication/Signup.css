@@ -88,6 +88,6 @@
   }
   
   #signup_btn:focus {
-    outline: none; 
+    outline: none;
     box-shadow: 0 0 0 4px rgba(158, 158, 159, 0.5); 
   }

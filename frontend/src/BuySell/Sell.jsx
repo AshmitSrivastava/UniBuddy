@@ -7,7 +7,7 @@ function Sell() {
     description: '',
     originalPrice: '',
     resellingPrice: '',
-    category: '', // Add category to product data
+    category: '', 
   });
 
   function handleChange(e) {

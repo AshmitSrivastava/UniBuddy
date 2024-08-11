@@ -70,7 +70,7 @@ import Dashboard from "./StudentDashboard/Dashboard";
 
 
 //ash imports if any 
-
+import Logout from "./Authentication/Logout";
 
 
 
@@ -78,7 +78,32 @@ import Dashboard from "./StudentDashboard/Dashboard";
 
 
 const App = () => {
+  const [isAuthenticated , setisAuthenticated] = useState(false);
 
+  useEffect(() => {
+    const checkAuth = async () => {
+      try{
+        const response = await fetch('http://localhost:3000/api/auth/protected',{
+          credentials : 'include'
+        });
+        if(response.status === 200){
+          setisAuthenticated(true);
+        }
+      }
+      catch(err){
+        console.error("Error in authenticated ", err);
+      }
+    };
+     checkAuth();
+  }, []);
+
+  const handleLogin = () => {
+    setisAuthenticated(true);
+  }
+
+  const handleLogout = () => {
+    setisAuthenticated(false);
+  }
 
   return (
     <>
@@ -108,7 +133,8 @@ const App = () => {
             
             
             
-            <Route path="/login" element={<Login />} />
+            <Route path="/login" element={<Login onLogin = {handleLogin} />} />
+            <Route path="/logout" element={<Logout onLogout = {handleLogout} />} />
             <Route path="/signup" element={<Signup />} />
             <Route path="/dashboard" element={<Dashboard />} />
 
