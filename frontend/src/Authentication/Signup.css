@@ -42,9 +42,9 @@
 .signup-rightcontainer{
     width: 45%;
     background-color: rgb(4, 76, 94);
-    padding-top:120px;
-    padding-right: 20px;
-    padding-left: 20px;
+    padding-top:5rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
     display: flex;
     justify-content: center;
     border-radius:  0px 16px 16px 0px;
@@ -54,7 +54,7 @@
 .signup-input-boxes{
     background-color: rgb(189, 240, 255);
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
     padding:5px;
 }
 

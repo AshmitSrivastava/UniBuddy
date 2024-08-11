@@ -33,7 +33,7 @@ const Signup = () => {
             placeholder="Confirm your password" 
             required 
             className="signup-input-boxes" /> 
-        <button type="submit" id='signup_btn'>Register</button>
+        <button type="submit" id='signup_btn'>Sign In</button>
         </form>
     
     </div>

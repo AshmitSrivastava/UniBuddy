@@ -100,7 +100,7 @@ const ClubCard = ({ club }) => {
     );
   };
   
-  const ClubsPage = () => {
+  const Committees = () => {
     return (
       <div className="min-h-screen bg-gray-100 p-8">
         <h1 className="text-5xl font-bold text-center mb-12 text-gray-800">College Clubs & Communities</h1>
@@ -113,4 +113,4 @@ const ClubCard = ({ club }) => {
     );
   };
   
-  export default ClubsPage;
+  export default Committees;
