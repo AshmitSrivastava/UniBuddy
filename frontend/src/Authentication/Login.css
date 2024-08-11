@@ -1,6 +1,8 @@
 .login-outercontainer{
     height: 100vh;
     background-color: rgb(36, 35, 35);
+    background:url("https://img.freepik.com/free-vector/gradient-dynamic-purple-lines-background_23-2148995757.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1723161600&semt=ais_hybrid");
+    background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -15,8 +17,7 @@
     border-radius: 8px  ;
 }
 
-.login-leftcontainer{
-    background-color: rgb(128, 136, 197);
+.login-leftcontainer {
     width: 55%;
     display: flex;
     flex-direction: column;
@@ -25,11 +26,41 @@
     text-align: center;
     color: white;
     border-radius: 16px 0px 0px 16px;
+    position: relative;
+    overflow: hidden; /* Ensures content and overlay stay within the container */
 }
 
-#login-welcome-back{
-    font-size: 2.5rem;
-    line-height: 2.5rem;
+.login-leftcontainer::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #3e4242;
+    /* background-image: url('https://images.unsplash.com/photo-1535478044878-3ed83d5456ef?q=80&w=1791&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); Add your background image here */
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5; /* Adjust opacity to control image visibility */
+    z-index: 1;
+}
+
+.login-leftcontainer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(212, 213, 223, 0.2); /* Adjust color and opacity */
+    z-index: 2;
+    border-radius: 16px 0px 0px 16px;
+}
+
+#login-welcome-back, #login-quote {
+    position: relative;
+    font-size:2.3rem;
+    z-index: 3; /* Ensures the text is above the background and overlay */
 }
 
 #login-quote{
@@ -39,7 +70,7 @@
 
 .login-rightcontainer{
     width: 45%;
-    background-color: rgb(227, 226, 226);
+    background-color: rgb(106, 107, 173);
     padding-top:120px;
     padding-right: 20px;
     padding-left: 20px;
@@ -53,9 +84,11 @@
     background-color: rgb(253, 253, 253);
     width: 100%;
     margin-bottom: 20px;
+    padding:5px;
 }
 
 #login_Sign_btn{
+    margin-top:1rem;
     background-color:black ;
     font-size: 1.3rem;
     color: white;
@@ -65,7 +98,7 @@
 
 #login_Sign_btn {
     margin-left: 6.5rem;
-    background-color: rgb(123, 135, 232); 
+    background-color: rgb(3, 14, 102); 
     color: white; 
     padding: 10px 0px; 
     border: none; 
@@ -76,15 +109,15 @@
   }
   
   #login_Sign_btn:hover {
-    background-color: #035dbe; 
+    background-color: #011d3b; 
   }
   
   #login_Sign_btn:active {
-    background-color: #0557ae; 
+    background-color: #132231; 
     transform: scale(0.98); 
   }
   
   #login_Sign_btn:focus {
     outline: none; 
-    box-shadow: 0 0 0 4px rgba(125, 182, 243, 0.5); 
+    box-shadow: 0 0 0 4px rgba(48, 49, 51, 0.5); 
   }

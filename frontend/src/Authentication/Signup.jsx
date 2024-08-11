@@ -10,7 +10,7 @@ const Signup = () => {
         <h1 id='signup-welcome-back'>Welcome to UniBuddy</h1>
         <h4 id='signup-quote'>Where knowledge meets opportunity!</h4>
     </div>
-
+    
     <div className="signup-rightcontainer">
         <form >
         <input 
@@ -27,6 +27,12 @@ const Signup = () => {
             required 
             className="signup-input-boxes" />
 
+          <input 
+            type="password"
+            name="Re-password" 
+            placeholder="Confirm your password" 
+            required 
+            className="signup-input-boxes" /> 
         <button type="submit" id='signup_btn'>Register</button>
         </form>
     

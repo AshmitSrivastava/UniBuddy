@@ -27,6 +27,7 @@ import Calendar from "./EventScheduler/Calendar";
 //Dhruv imports iske neeche
 import Login from "./Authentication/Login";
 import Signup from "./Authentication/Signup";
+import Dashboard from "./StudentDashboard/Dashboard";
 
 
 
@@ -92,7 +93,7 @@ const App = () => {
             <Route path="/calendar" element={<Calendar />} /> 
             <Route path="/login" element={<Login />} />
             <Route path="/signup" element={<Signup />} />
-
+            <Route path="/dashboard" element={<Dashboard />} />
 
 
 

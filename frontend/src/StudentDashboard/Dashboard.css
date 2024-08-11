@@ -1,0 +1,136 @@
+
+
+  
+  .dashboard-dashboard {
+    margin: 0;
+    padding: 0;
+    background-color: #181a1e;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    padding: 20px;
+
+  }
+  
+  .dashboard-left-panel {
+    width: 20%;
+    background-color: #1f2229;
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .dashboard-profile-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .dashboard-profile-pic {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+  }
+  
+  .dashboard-profile-info {
+    margin-left: 15px;
+  }
+  
+  .dashboard-info {
+    text-align: left;
+    line-height: 1.8;
+  }
+  
+  .dashboard-middle-panel {
+    width: 55%;
+    margin-left: 20px;
+  }
+  
+  .dashboard-attendance-section,
+  .dashboard-timetable-section {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #1f2229;
+    border-radius: 15px;
+  }
+  
+  .dashboard-attendance-section h3,
+  .dashboard-timetable-section h3 {
+    margin-bottom: 20px;
+  }
+  
+  .dashboard-attendance-cards {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+  }
+  
+  .dashboard-attendance-card {
+    background-color: #272b33;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .dashboard-attendance-card p {
+    margin: 5px 0;
+  }
+  
+  .dashboard-circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #475577;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
+  }
+  
+  .dashboard-timetable-section table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .dashboard-timetable-section th,
+  .dashboard-timetable-section td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #475577;
+  }
+  
+  .dashboard-extra-right-panel {
+    width: 25%;
+    margin-left: 20px;
+  }
+  
+  .dashboard-announcements-section,
+  .dashboard-teachers-on-leave-section {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #1f2229;
+    border-radius: 15px;
+  }
+  
+  .dashboard-announcements-section h3,
+  .dashboard-teachers-on-leave-section h3 {
+    margin-bottom: 20px;
+  }
+  
+  .dashboard-announcement-cards,
+  .dashboard-teacher-cards {
+    display: grid;
+    gap: 20px;
+  }
+  
+  .dashboard-announcement-card,
+  .dashboard-teacher-card {
+    background-color: #272b33;
+    border-radius: 10px;
+    padding: 15px;
+  }
+  
