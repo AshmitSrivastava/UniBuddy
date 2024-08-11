@@ -28,6 +28,7 @@ import Notes from "./Notes/Notes";
 //Dhruv imports iske neeche
 import Login from "./Authentication/Login";
 import Signup from "./Authentication/Signup";
+import Committees from "./Committees";
 
 
 
@@ -94,6 +95,8 @@ const App = () => {
             <Route path="/notes" element={<Notes />} /> 
             <Route path="/login" element={<Login />} />
             <Route path="/signup" element={<Signup />} />
+            <Route path="/committees" element={<Committees />} />
+
 
 
 
