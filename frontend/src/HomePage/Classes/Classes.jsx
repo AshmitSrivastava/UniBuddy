@@ -33,7 +33,7 @@ const Classes = () => {
     <div className="classes-div">
       <div className="classes-heading">
         <h3>
-          Welcome to <span>StudyHive</span>
+          Welcome to <span>UniBuddy</span>
         </h3>
         <p>
           "Empower your learning journey with access to comprehensive course
