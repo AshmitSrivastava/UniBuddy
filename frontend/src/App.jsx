@@ -10,10 +10,26 @@ import Committees from "./Committees";
 // import Header from "./Header";
 // import Footer from "./Footer";
 
+
+
+
+
+
+
+
+
 //Dhruv imports iske neeche
 import Login from "./Authentication/Login";
 import Signup from "./Authentication/Signup";
 import Dashboard from "./StudentDashboard/Dashboard";
+
+
+
+
+
+
+
+
 
 //shewta imports iske neeche
 import HomePage from "./HomePage/HomePage";
@@ -24,8 +40,24 @@ import HomePage from "./HomePage/HomePage";
 // import Testimonials from "./HomePage/Testimonial/Testimonials";
 // import Footer from "./HomePage/Footer/Footer";
 
+
+
+
+
+
+
+
+
 //ash imports if any
 import Logout from "./Authentication/Logout";
+
+
+
+
+
+
+
+
 
 const App = () => {
   const [isAuthenticated, setisAuthenticated] = useState(false);
@@ -57,6 +89,8 @@ const App = () => {
     setisAuthenticated(false);
   };
 
+
+
   return (
     <>
       <BrowserRouter>
@@ -72,10 +106,27 @@ const App = () => {
           <Route path="/notes" element={<Notes />} />
           <Route path="/committees" element={<Committees />} />
 
+
+
+
+
+
+          {/* <DHRUV KE ROUTES /> */}
           <Route path="/login" element={<Login onLogin={handleLogin} />} />
           <Route path="/logout" element={<Logout onLogout={handleLogout} />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/dashboard" element={<Dashboard />} />
+
+
+
+
+
+
+
+
+
+
+          {/* <SHEWTA KE ROUTES /> */}
         </Routes>
 
         {/* <Footer /> */}
