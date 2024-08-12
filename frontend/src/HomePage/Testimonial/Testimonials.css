@@ -1,0 +1,50 @@
+/* src/components/Testimonials.css */
+.testimonials-section {
+  padding: 50px;
+  background-color: #f8c287; /* Background color */
+  text-align: center;
+}
+
+.testimonials-heading {
+  margin-top: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 70px;
+  margin-bottom: 20px;
+  color: #fff; /* Heading color */
+  position: relative;
+}
+
+.testimonials-heading span {
+  text-decoration: none; /* Remove default underline */
+  color: #fff; /* Default color of the span */
+  position: relative;
+}
+
+.testimonials-heading span::after {
+  content: "";
+  position: absolute;
+  bottom: -10px; /* Position of the underline */
+  left: 0;
+  width: 100%;
+  height: 6px; /* Thickness of the underline */
+  background-color: #90cff1; /* Blue color */
+  transform: scaleX(0);
+  transform-origin: bottom left;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.testimonials-heading span:hover::after {
+  transform: scaleX(1);
+  background-color: #fff; /* Darker blue on hover */
+  color: #90cff1;
+}
+
+.testimonials-intro {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: #fff; /* Text color */
+  margin-bottom: 40px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}

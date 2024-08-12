@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.cards-div {
+  height: 450px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.classes-div {
+  text-align: center;
+  padding: 50px;
+  background-color: #f6f6f6; /* Light background for contrast */
+}
+
+.classes-heading {
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  margin-top: 80px;
+  margin-bottom: 20px;
+}
+
+.classes-heading p {
+  margin-left: 70px;
+  line-height: 30px;
+  margin-top: 20px;
+}
+
+.classes-heading h3 {
+  margin-top: 0;
+  font-size: 70px;
+}
+
+.classes-heading span {
+  font-size: 100px;
+  color: #90cff1; /* Emphasis color */
+  position: relative;
+}
+
+.classes-heading span::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #f57e0f;
+  transform: scaleX(0);
+  transform-origin: bottom right; /* Start from the right side */
+  transition: transform 0.3s ease-out;
+}
+
+.classes-heading span:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
