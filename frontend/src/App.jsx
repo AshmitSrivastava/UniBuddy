@@ -127,6 +127,20 @@ const App = () => {
 
 
           {/* <SHEWTA KE ROUTES /> */}
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
         </Routes>
 
         {/* <Footer /> */}
