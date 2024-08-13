@@ -9,6 +9,7 @@ import Notes from "./Notes/Notes";
 import Committees from "./Committees";
 // import Header from "./Header";
 // import Footer from "./Footer";
+import Quiz from "./Quiz/Quiz";
 
 
 
@@ -105,6 +106,7 @@ const App = () => {
           <Route path="/calendar" element={<Calendar />} />
           <Route path="/notes" element={<Notes />} />
           <Route path="/committees" element={<Committees />} />
+          <Route path="/quiz" element={<Quiz />} />
 
 
 
